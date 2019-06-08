@@ -70,6 +70,24 @@ namespace Microsoft.SSHDebugPS {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to _Advanced Settings.
+        /// </summary>
+        public static string AdvancedSettingsHeader {
+            get {
+                return ResourceManager.GetString("AdvancedSettingsHeader", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Cancel.
+        /// </summary>
+        public static string CancelLabel {
+            get {
+                return ResourceManager.GetString("CancelLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Executing command &apos;{0}&apos; failed. {1}.
         /// </summary>
         public static string CommandExecutionErrorFormat {
@@ -93,6 +111,15 @@ namespace Microsoft.SSHDebugPS {
         public static string CommandLabelText {
             get {
                 return ResourceManager.GetString("CommandLabelText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to _Connection Type:.
+        /// </summary>
+        public static string ConnectionLabel {
+            get {
+                return ResourceManager.GetString("ConnectionLabel", resourceCulture);
             }
         }
         
@@ -129,6 +156,24 @@ namespace Microsoft.SSHDebugPS {
         public static string ErrorStatusTextFormat {
             get {
                 return ResourceManager.GetString("ErrorStatusTextFormat", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to _Hostname:.
+        /// </summary>
+        public static string HostnameLabel {
+            get {
+                return ResourceManager.GetString("HostnameLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Specify a hostname if connecting to a different Docker daemon. .
+        /// </summary>
+        public static string HostnameTip {
+            get {
+                return ResourceManager.GetString("HostnameTip", resourceCulture);
             }
         }
         
@@ -192,6 +237,15 @@ namespace Microsoft.SSHDebugPS {
         public static string NoPortsText {
             get {
                 return ResourceManager.GetString("NoPortsText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to _OK.
+        /// </summary>
+        public static string OKLabel {
+            get {
+                return ResourceManager.GetString("OKLabel", resourceCulture);
             }
         }
         
