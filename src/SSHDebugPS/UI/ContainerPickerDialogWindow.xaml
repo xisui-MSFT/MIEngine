@@ -344,19 +344,20 @@
                     <ColumnDefinition Width="*" />
                 </Grid.ColumnDefinitions>
                 
-                <Label x:Uid="uidDaemonLabel"
+                <Label x:Uid="uidHostnameLabel"
+                       x:Name="HostnameLabel"
                        Grid.Row="0"
                        Grid.Column="0"
-                       x:Name="DaemonLabel"
-                       Target="{Binding ElementName=daemonTextBlock}"
+                       Target="{Binding ElementName=HostnameTextBlock}"
                        Margin="19,5,0,5"
                        Content="{x:Static local:UIResources.HostnameLabel}"
                        ToolTip="{x:Static local:UIResources.HostnameTip}" />
 
-                <TextBox x:Uid="uidDaemonTextBlock"
+                <TextBox x:Uid="uidHostnameTextBlock"
+                         x:Name="HostnameTextBlock"
+                         AutomationProperties.LabeledBy="{Binding ElementName=HostnameLabel}"
                          Grid.Row="0"
                          Grid.Column="1"
-                         x:Name="daemonTextBlock"
                          Margin="0,5,0,5"
                          Padding="2" />
                 </Grid>
